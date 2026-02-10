@@ -3,35 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KithOSLabs | The System, Explained</title>
+    <title>KithOSLabs | Agentic Theory of Operations</title>
     <style>
-        body { 
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: #020617; 
-            color: #f8fafc; 
-            display: flex; 
-            flex-direction: column;
-            justify-content: center; 
-            align-items: center; 
-            height: 100vh; 
-            margin: 0;
-            text-align: center;
-        }
-        .container { padding: 20px; }
-        h1 { font-size: 4rem; margin: 0; color: #38bdf8; letter-spacing: -0.05em; }
-        p { font-size: 1.5rem; color: #94a3b8; max-width: 600px; line-height: 1.6; }
-        .footer { position: absolute; bottom: 20px; font-size: 0.8rem; color: #475569; }
-        .badge { background: #1e293b; padding: 5px 12px; border-radius: 20px; font-size: 0.9rem; color: #38bdf8; margin-bottom: 20px; display: inline-block; }
+        :root { --bg: #030712; --accent: #38bdf8; --text: #f8fafc; --muted: #94a3b8; }
+        body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); margin: 0; display: flex; align-items: center; justify-content: center; min-height: 100vh; overflow-x: hidden; }
+        .grid { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-image: radial-gradient(var(--accent) 0.5px, transparent 0.5px); background-size: 30px 30px; opacity: 0.1; z-index: -1; }
+        .content { text-align: center; max-width: 800px; padding: 2rem; }
+        .badge { display: inline-block; padding: 6px 12px; border: 1px solid var(--accent); border-radius: 20px; color: var(--accent); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 2rem; }
+        h1 { font-size: 4.5rem; margin: 0; font-weight: 800; letter-spacing: -2px; line-height: 1; }
+        p { font-size: 1.25rem; color: var(--muted); margin: 1.5rem 0 2.5rem; line-height: 1.6; }
+        .features { display: flex; gap: 20px; justify-content: center; margin-bottom: 3rem; flex-wrap: wrap; }
+        .feature-item { font-size: 0.9rem; color: var(--text); background: rgba(255,255,255,0.05); padding: 10px 20px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); }
+        .cta { background: var(--accent); color: var(--bg); padding: 16px 32px; border-radius: 8px; text-decoration: none; font-weight: 700; transition: transform 0.2s; display: inline-block; }
+        .cta:hover { transform: scale(1.05); }
+        footer { position: absolute; bottom: 30px; font-size: 0.8rem; color: var(--muted); }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="badge">Agentic Theory of Operations</div>
+    <div class="grid"></div>
+    <div class="content">
+        <div class="badge">Stealth Mode: Phase 01</div>
         <h1>KithOS</h1>
-        <p>Turning complex system logic into human understanding. <br>The future of documentation is coming soon.</p>
-    </div>
-    <div class="footer">
-        &copy; 2026 KithOSLabs LLC. KithOS&trade; | kithoslabs.com
+        <p>The first <strong>Agentic Theory of Operations</strong>. We are re-engineering the relationship between human intent and machine execution.</p>
+        
+        <div class="features">
+            <div class="feature-item">Deterministic Logic</div>
+            <div class="feature-item">System Explainability</div>
+            <div class="feature-item">Autonomous Orchestration</div>
+        </div>
+
+        <a href="mailto:mike@kithoslabs.com" class="cta">Inquire for Early Access</a>
+        
+        <footer>&copy; 2026 KithOSLabs. Built for the next era of Intelligence.</footer>
     </div>
 </body>
 </html>
